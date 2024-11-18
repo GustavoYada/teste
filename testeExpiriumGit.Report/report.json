@@ -114,12 +114,12 @@
       "ordinal": 1,
       "visualContainers": [
         {
-          "config": "{\"name\":\"c4fc5f5b1c737e28f064\",\"layouts\":[{\"id\":0,\"position\":{\"x\":101,\"y\":461,\"width\":1179,\"height\":259,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Faturamento 2018\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento 2018\"},\"Name\":\"Medidas.Faturamento 2018\",\"NativeReferenceName\":\"Faturamento 2018\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento 2018\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"c4fc5f5b1c737e28f064\",\"layouts\":[{\"id\":0,\"position\":{\"x\":81.95121951219512,\"y\":460.9756097560975,\"z\":1000,\"width\":1179.5121951219512,\"height\":259.0243902439024,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Faturamento 2018\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento 2018\"},\"Name\":\"Medidas.Faturamento 2018\",\"NativeReferenceName\":\"Faturamento 2018\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento 2018\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 259.00,
-          "width": 1179.00,
-          "x": 101.00,
-          "y": 461.00,
+          "height": 259.02,
+          "width": 1179.51,
+          "x": 81.95,
+          "y": 460.98,
           "z": 1000.00
         },
         {

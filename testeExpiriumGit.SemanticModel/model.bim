@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"BancoDeDados\",\"fVendas\",\"fMetas\",\"dProduto\",\"dVendedor\",\"Consulta1\",\"dCalendario\",\"Medidas\"]"
+        "value": "[\"BancoDeDados\",\"fVendas\",\"dProduto\",\"dVendedor\",\"Consulta1\",\"dCalendario\",\"Medidas\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.137.1102.0 (24.10)"
+        "value": "2.138.782.0 (24.11)"
       },
       {
         "name": "PBI_ProTooling",
@@ -97,23 +97,9 @@
         "toTable": "dVendedor"
       },
       {
-        "name": "AutoDetected_2ea676ff-b2d7-409f-be73-035fe632801c",
-        "fromColumn": "cdVendedor",
-        "fromTable": "fMetas",
-        "toColumn": "cdVendedor",
-        "toTable": "dVendedor"
-      },
-      {
         "name": "af7dff26-4795-eed9-a328-9058e073c75b",
         "fromColumn": "DataEmissao",
         "fromTable": "fVendas",
-        "toColumn": "Data",
-        "toTable": "dCalendario"
-      },
-      {
-        "name": "3e015ba1-335f-1323-3768-656715a5069d",
-        "fromColumn": "Data",
-        "fromTable": "fMetas",
         "toColumn": "Data",
         "toTable": "dCalendario"
       },
@@ -267,96 +253,6 @@
                 "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Tipo Alterado1\",{\"DataEmissao\", \"NFe\", \"cdProduto\", \"cdVendedor\", \"QtdItens\", \"ValorUnitario\", \"ValorTotal\"})",
                 "in",
                 "    #\"Outras Colunas Removidas\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "fMetas",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "cdVendedor",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "5a4de0cb-c947-4c1a-9a51-1dfa3297d907",
-            "sourceColumn": "cdVendedor",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Long Date",
-            "lineageTag": "0171836c-e41f-4215-98fa-84130e04e164",
-            "sourceColumn": "Data",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Valor",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "dataType": "double",
-            "lineageTag": "4f32e89a-fabd-41d2-a473-f4483054e404",
-            "sourceColumn": "Valor",
-            "summarizeBy": "sum"
-          }
-        ],
-        "lineageTag": "54154781-6e84-4c9e-aeb0-681e32f0d2ec",
-        "partitions": [
-          {
-            "name": "fMetas",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\gusta\\Downloads\\BaseDados-20241008T114732Z-001\\BaseDados\\Metas.xlsx\"), null, true),",
-                "    Metas_Sheet = Fonte{[Item=\"Metas\",Kind=\"Sheet\"]}[Data],",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Metas_Sheet, [PromoteAllScalars=true]),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Metas por Vendedor\", type any}, {\"Column2\", type any}, {\"Column3\", type any}, {\"Column4\", type any}, {\"Column5\", type any}, {\"Column6\", type any}, {\"Column7\", type any}, {\"Column8\", type any}, {\"Column9\", type any}, {\"Column10\", type any}, {\"Column11\", type any}, {\"Column12\", type any}, {\"Column13\", type any}, {\"Column14\", type any}, {\"Column15\", type any}, {\"Column16\", type any}, {\"Column17\", type any}, {\"Column18\", type any}, {\"Column19\", type any}, {\"Column20\", type any}, {\"Column21\", type any}, {\"Column22\", type any}, {\"Column23\", type any}, {\"Column24\", type any}, {\"Column25\", type any}, {\"Column26\", type any}}),",
-                "    #\"Linhas Superiores Removidas\" = Table.Skip(#\"Tipo Alterado\",3),",
-                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Linhas Superiores Removidas\", each ([Metas por Vendedor] <> \"Total\")),",
-                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Linhas Filtradas\",{\"Column26\"}),",
-                "    #\"Cabeçalhos Promovidos1\" = Table.PromoteHeaders(#\"Colunas Removidas\", [PromoteAllScalars=true]),",
-                "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos1\",{{\"cdVendedor\", Int64.Type}, {\"01/01/2017\", type number}, {\"01/02/2017\", type number}, {\"01/03/2017\", type number}, {\"01/04/2017\", type number}, {\"01/05/2017\", type number}, {\"01/06/2017\", type number}, {\"01/07/2017\", type number}, {\"01/08/2017\", type number}, {\"01/09/2017\", type number}, {\"01/10/2017\", type number}, {\"01/11/2017\", type number}, {\"01/12/2017\", type number}, {\"01/01/2018\", type number}, {\"01/02/2018\", type number}, {\"01/03/2018\", type number}, {\"01/04/2018\", type number}, {\"01/05/2018\", type number}, {\"01/06/2018\", type number}, {\"01/07/2018\", type number}, {\"01/08/2018\", type number}, {\"01/09/2018\", type number}, {\"01/10/2018\", type number}, {\"01/11/2018\", type number}, {\"01/12/2018\", type number}}),",
-                "    #\"Outras Colunas Não Dinâmicas\" = Table.UnpivotOtherColumns(#\"Tipo Alterado1\", {\"cdVendedor\"}, \"Data\", \"Valor\"),",
-                "    #\"Tipo Alterado2\" = Table.TransformColumnTypes(#\"Outras Colunas Não Dinâmicas\",{{\"Data\", type date}})",
-                "in",
-                "    #\"Tipo Alterado2\""
               ],
               "type": "m"
             }

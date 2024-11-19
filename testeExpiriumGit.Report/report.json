@@ -114,6 +114,15 @@
       "ordinal": 1,
       "visualContainers": [
         {
+          "config": "{\"name\":\"4d0d8cd8ce291a39b624\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":1225,\"height\":309,\"z\":1001,\"tabOrder\":1001}}],\"singleVisual\":{\"visualType\":\"PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 309.00,
+          "width": 1225.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1001.00
+        },
+        {
           "config": "{\"name\":\"c4fc5f5b1c737e28f064\",\"layouts\":[{\"id\":0,\"position\":{\"x\":81.95121951219512,\"y\":460.9756097560975,\"z\":1000,\"width\":1179.5121951219512,\"height\":259.0243902439024,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Faturamento 2018\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento 2018\"},\"Name\":\"Medidas.Faturamento 2018\",\"NativeReferenceName\":\"Faturamento 2018\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Faturamento 2018\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 259.02,

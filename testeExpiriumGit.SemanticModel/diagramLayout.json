@@ -22,19 +22,6 @@
         },
         {
           "location": {
-            "x": 440.06060606060606,
-            "y": 20.969696969696976
-          },
-          "nodeIndex": "fMetas",
-          "nodeLineageTag": "54154781-6e84-4c9e-aeb0-681e32f0d2ec",
-          "size": {
-            "height": 152,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 0,
             "y": 408.969696969697
           },

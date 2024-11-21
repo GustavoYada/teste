@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "SemanticModel",
-    "displayName": "testeExpiriumGit"
+    "type": "Lakehouse",
+    "displayName": "DataflowsStagingLakehouse"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "390104b3-7495-4cb1-93cb-23d2b8461003"
+    "logicalId": "5bd8ad4d-1e21-40a7-9ca4-aa91f3b33645"
   }
 }

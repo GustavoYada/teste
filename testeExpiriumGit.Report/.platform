@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "testeExpiriumGit"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1f538a1a-2f07-4982-8c89-8bb0e19c02df"
+  }
+}

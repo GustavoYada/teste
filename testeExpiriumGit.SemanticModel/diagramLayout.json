@@ -1,0 +1,86 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "fVendas",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 408.969696969697
+          },
+          "nodeIndex": "dProduto",
+          "nodeLineageTag": "9f3a3fa8-8e5d-4e1a-889a-3370347425cf",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 439.030303030303,
+            "y": 395.45454545454544
+          },
+          "nodeIndex": "dVendedor",
+          "nodeLineageTag": "6e412b1b-5dd4-4c12-8466-0816bc5b59a7",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 684.3030303030306,
+            "y": 216.030303030303
+          },
+          "nodeIndex": "dCalendario",
+          "nodeLineageTag": "1354354f-6878-4c91-94fc-f058ad3157f1",
+          "size": {
+            "height": 152.78787878787881,
+            "width": 244.6060606060604
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 803.15151515151524,
+            "y": 12.393939393939405
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "75c6c43b-7cbc-405a-9118-7aeb6fba6931",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 66,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

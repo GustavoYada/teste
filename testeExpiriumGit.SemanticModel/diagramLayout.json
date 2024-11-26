@@ -71,6 +71,19 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1087.1515151515152,
+            "y": 221.72727272727275
+          },
+          "nodeIndex": "fMetas",
+          "nodeLineageTag": "888c33e2-5591-43a1-ae67-13d5f9785824",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",

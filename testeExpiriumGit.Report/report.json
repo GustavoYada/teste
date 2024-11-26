@@ -9,7 +9,7 @@
     },
     {
       "boundSection": "33058d183ba60a704ada",
-      "config": "{}",
+      "config": "{\"acceptsFilterContext\":1}",
       "name": "f0e083cdedb8f2c47fd5"
     }
   ],
@@ -39,7 +39,7 @@
       "name": "33058d183ba60a704ada",
       "visualContainers": [
         {
-          "config": "{\"name\":\"06935ec0904f05815c81\",\"layouts\":[{\"id\":0,\"position\":{\"x\":756.5853658536586,\"y\":206.34146341463415,\"z\":1000,\"width\":523.9024390243902,\"height\":513.6585365853658,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Planilha1.ValorTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"fVendas\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ValorTotal\"}},\"Function\":0},\"Name\":\"Sum(Planilha1.ValorTotal)\",\"NativeReferenceName\":\"ValorTotal\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ValorTotal\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Planilha1.ValorTotal)\":{\"displayName\":\"ValorTotal\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0.2}}}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"37L\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0}}}}}}}]}}}",
+          "config": "{\"name\":\"06935ec0904f05815c81\",\"layouts\":[{\"id\":0,\"position\":{\"x\":756.5853658536586,\"y\":206.34146341463415,\"z\":1000,\"width\":523.9024390243902,\"height\":513.6585365853658,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(fMetas.Valor)\"}],\"Category\":[{\"queryRef\":\"fMetas.cdVendedor\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fMetas\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Valor\"}},\"Function\":0},\"Name\":\"Sum(fMetas.Valor)\",\"NativeReferenceName\":\"Soma de Valor\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"cdVendedor\"},\"Name\":\"fMetas.cdVendedor\",\"NativeReferenceName\":\"cdVendedor\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Valor\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0.2}}}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"37L\"}}},\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Categorical'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0}}}}}}}]}}}",
           "filters": "[]",
           "height": 513.66,
           "width": 523.90,
